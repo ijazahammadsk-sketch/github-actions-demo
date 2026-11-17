@@ -7,4 +7,4 @@ jobs:
       - name: hello-git
         run: |
           echo "this is line one"
-          echo "this is line two"
+          echo "this is line ${{vars.Name}}"
