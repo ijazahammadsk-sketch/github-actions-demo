@@ -1,10 +1,11 @@
 name : HELLO WORLD
 on: push
 jobs:
-  hello:
+  Actions-demo:
     runs-on: ubuntu-latest
     steps:
-      - name: hello-git
-        run: |
-          echo "this is line one"
-          echo "this is line ${{vars.Name}}"
+      - name: checkout the code
+        uses: actions/checkout@v4
+      - name: print index.html file
+        run: cat index.html
+       
