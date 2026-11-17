@@ -1,11 +1,9 @@
 name : HELLO WORLD
 on: push
 jobs:
-  Actions-demo:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout the code
-        uses: actions/checkout@v4
-      - name: print index.html file
-        run: cat index.html
+      - name: scerate
+        run: echo "${{DOCKER_USERNAME}}
        
