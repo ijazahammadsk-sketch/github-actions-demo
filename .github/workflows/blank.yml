@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: scerate
-        run: echo "${{DOCKER_USERNAME}}
+        run: echo "${{secrets.DOCKER_USERNAME}}
        
